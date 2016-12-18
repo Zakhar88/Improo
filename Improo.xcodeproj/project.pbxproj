@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70F490886D1D09DBA3AD38CA /* Pods_Improo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9277D986118DAF32CE9F51FE /* Pods_Improo.framework */; };
 		B1C750941DF8B48B0057349A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C750931DF8B48B0057349A /* AppDelegate.swift */; };
 		B1C750961DF8B48B0057349A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C750951DF8B48B0057349A /* ViewController.swift */; };
 		B1C750991DF8B48B0057349A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C750971DF8B48B0057349A /* Main.storyboard */; };
 		B1C7509B1DF8B48B0057349A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C7509A1DF8B48B0057349A /* Assets.xcassets */; };
 		B1C7509E1DF8B48B0057349A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C7509C1DF8B48B0057349A /* LaunchScreen.storyboard */; };
+		B1C750A61DF8B4F50057349A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1C750A51DF8B4F50057349A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0704BF6DD5226A89FFD0B612 /* Pods-Improo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Improo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Improo/Pods-Improo.debug.xcconfig"; sourceTree = "<group>"; };
+		733A51AAD972C716B3105CF9 /* Pods-Improo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Improo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Improo/Pods-Improo.release.xcconfig"; sourceTree = "<group>"; };
+		9277D986118DAF32CE9F51FE /* Pods_Improo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Improo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C750901DF8B48B0057349A /* Improo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Improo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C750931DF8B48B0057349A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1C750951DF8B48B0057349A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		B1C7509A1DF8B48B0057349A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1C7509D1DF8B48B0057349A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1C7509F1DF8B48B0057349A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1C750A51DF8B4F50057349A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F490886D1D09DBA3AD38CA /* Pods_Improo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				B1C750921DF8B48B0057349A /* Improo */,
 				B1C750911DF8B48B0057349A /* Products */,
+				E76AFA43BE5AC8B42392DC1C /* Pods */,
+				D4AE92B19BD0E139801DEEB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				B1C7509A1DF8B48B0057349A /* Assets.xcassets */,
 				B1C7509C1DF8B48B0057349A /* LaunchScreen.storyboard */,
 				B1C7509F1DF8B48B0057349A /* Info.plist */,
+				B1C750A51DF8B4F50057349A /* GoogleService-Info.plist */,
 			);
 			path = Improo;
+			sourceTree = "<group>";
+		};
+		D4AE92B19BD0E139801DEEB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9277D986118DAF32CE9F51FE /* Pods_Improo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E76AFA43BE5AC8B42392DC1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0704BF6DD5226A89FFD0B612 /* Pods-Improo.debug.xcconfig */,
+				733A51AAD972C716B3105CF9 /* Pods-Improo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1C750A21DF8B48B0057349A /* Build configuration list for PBXNativeTarget "Improo" */;
 			buildPhases = (
+				2D301BEDA64299C9FE6BE0C3 /* [CP] Check Pods Manifest.lock */,
 				B1C7508C1DF8B48A0057349A /* Sources */,
 				B1C7508D1DF8B48A0057349A /* Frameworks */,
 				B1C7508E1DF8B48A0057349A /* Resources */,
+				BD8508061A5772B17F34C03C /* [CP] Embed Pods Frameworks */,
+				3207DD3337730445FE173E8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1C7509E1DF8B48B0057349A /* LaunchScreen.storyboard in Resources */,
+				B1C750A61DF8B4F50057349A /* GoogleService-Info.plist in Resources */,
 				B1C7509B1DF8B48B0057349A /* Assets.xcassets in Resources */,
 				B1C750991DF8B48B0057349A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D301BEDA64299C9FE6BE0C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3207DD3337730445FE173E8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Improo/Pods-Improo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD8508061A5772B17F34C03C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Improo/Pods-Improo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B1C7508C1DF8B48A0057349A /* Sources */ = {
@@ -256,6 +335,7 @@
 		};
 		B1C750A31DF8B48B0057349A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0704BF6DD5226A89FFD0B612 /* Pods-Improo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Improo/Info.plist;
@@ -268,6 +348,7 @@
 		};
 		B1C750A41DF8B48B0057349A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 733A51AAD972C716B3105CF9 /* Pods-Improo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Improo/Info.plist;
