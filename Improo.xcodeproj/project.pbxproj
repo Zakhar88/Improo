@@ -14,6 +14,7 @@
 		B1C7509B1DF8B48B0057349A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C7509A1DF8B48B0057349A /* Assets.xcassets */; };
 		B1C7509E1DF8B48B0057349A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C7509C1DF8B48B0057349A /* LaunchScreen.storyboard */; };
 		B1C750A61DF8B4F50057349A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1C750A51DF8B4F50057349A /* GoogleService-Info.plist */; };
+		B1D3AE7B1E316931005BB687 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3AE7A1E316931005BB687 /* ListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B1C7509D1DF8B48B0057349A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1C7509F1DF8B48B0057349A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1C750A51DF8B4F50057349A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B1D3AE7A1E316931005BB687 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTableViewController.swift; path = Controllers/ListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,15 +65,40 @@
 		B1C750921DF8B48B0057349A /* Improo */ = {
 			isa = PBXGroup;
 			children = (
+				B1D3AE7C1E316938005BB687 /* Models */,
+				B1D3AE7D1E316942005BB687 /* Views */,
+				B1D3AE7E1E3169C0005BB687 /* Controllers */,
 				B1C750931DF8B48B0057349A /* AppDelegate.swift */,
-				B1C750951DF8B48B0057349A /* ViewController.swift */,
-				B1C750971DF8B48B0057349A /* Main.storyboard */,
 				B1C7509A1DF8B48B0057349A /* Assets.xcassets */,
-				B1C7509C1DF8B48B0057349A /* LaunchScreen.storyboard */,
 				B1C7509F1DF8B48B0057349A /* Info.plist */,
 				B1C750A51DF8B4F50057349A /* GoogleService-Info.plist */,
 			);
 			path = Improo;
+			sourceTree = "<group>";
+		};
+		B1D3AE7C1E316938005BB687 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B1D3AE7D1E316942005BB687 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1C750971DF8B48B0057349A /* Main.storyboard */,
+				B1C7509C1DF8B48B0057349A /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B1D3AE7E1E3169C0005BB687 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1C750951DF8B48B0057349A /* ViewController.swift */,
+				B1D3AE7A1E316931005BB687 /* ListTableViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		D4AE92B19BD0E139801DEEB7 /* Frameworks */ = {
@@ -215,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D3AE7B1E316931005BB687 /* ListTableViewController.swift in Sources */,
 				B1C750961DF8B48B0057349A /* ViewController.swift in Sources */,
 				B1C750941DF8B48B0057349A /* AppDelegate.swift in Sources */,
 			);
@@ -378,6 +406,7 @@
 				B1C750A41DF8B48B0057349A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
