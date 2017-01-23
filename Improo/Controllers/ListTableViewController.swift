@@ -12,7 +12,7 @@ class ListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
+        //tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -39,7 +39,7 @@ class ListTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell", for: indexPath)
         cell.textLabel?.text = "Cell №\(indexPath.row)"
         return cell
     }

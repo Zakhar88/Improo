@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		70F490886D1D09DBA3AD38CA /* Pods_Improo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9277D986118DAF32CE9F51FE /* Pods_Improo.framework */; };
+		B16FC9FC1E36C6BA0057D49F /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC9FB1E36C6BA0057D49F /* Section.swift */; };
+		B16FC9FE1E36C6E50057D49F /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC9FD1E36C6E50057D49F /* Language.swift */; };
 		B1C750941DF8B48B0057349A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C750931DF8B48B0057349A /* AppDelegate.swift */; };
 		B1C750961DF8B48B0057349A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C750951DF8B48B0057349A /* ViewController.swift */; };
 		B1C750991DF8B48B0057349A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C750971DF8B48B0057349A /* Main.storyboard */; };
@@ -15,12 +17,17 @@
 		B1C7509E1DF8B48B0057349A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C7509C1DF8B48B0057349A /* LaunchScreen.storyboard */; };
 		B1C750A61DF8B4F50057349A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1C750A51DF8B4F50057349A /* GoogleService-Info.plist */; };
 		B1D3AE7B1E316931005BB687 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3AE7A1E316931005BB687 /* ListTableViewController.swift */; };
+		B1D3AE801E3290A7005BB687 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3AE7F1E3290A7005BB687 /* DetailViewController.swift */; };
+		B1D3AE821E36B6C4005BB687 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3AE811E36B6C4005BB687 /* Item.swift */; };
+		B1D3AE841E36B75A005BB687 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D3AE831E36B75A005BB687 /* Categories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0704BF6DD5226A89FFD0B612 /* Pods-Improo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Improo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Improo/Pods-Improo.debug.xcconfig"; sourceTree = "<group>"; };
 		733A51AAD972C716B3105CF9 /* Pods-Improo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Improo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Improo/Pods-Improo.release.xcconfig"; sourceTree = "<group>"; };
 		9277D986118DAF32CE9F51FE /* Pods_Improo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Improo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16FC9FB1E36C6BA0057D49F /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		B16FC9FD1E36C6E50057D49F /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		B1C750901DF8B48B0057349A /* Improo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Improo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C750931DF8B48B0057349A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1C750951DF8B48B0057349A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +37,9 @@
 		B1C7509F1DF8B48B0057349A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1C750A51DF8B4F50057349A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B1D3AE7A1E316931005BB687 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListTableViewController.swift; path = Controllers/ListTableViewController.swift; sourceTree = "<group>"; };
+		B1D3AE7F1E3290A7005BB687 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = Controllers/DetailViewController.swift; sourceTree = "<group>"; };
+		B1D3AE811E36B6C4005BB687 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B1D3AE831E36B75A005BB687 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,10 @@
 		B1D3AE7C1E316938005BB687 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B1D3AE811E36B6C4005BB687 /* Item.swift */,
+				B1D3AE831E36B75A005BB687 /* Categories.swift */,
+				B16FC9FB1E36C6BA0057D49F /* Section.swift */,
+				B16FC9FD1E36C6E50057D49F /* Language.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -97,6 +111,7 @@
 			children = (
 				B1C750951DF8B48B0057349A /* ViewController.swift */,
 				B1D3AE7A1E316931005BB687 /* ListTableViewController.swift */,
+				B1D3AE7F1E3290A7005BB687 /* DetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -242,9 +257,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D3AE821E36B6C4005BB687 /* Item.swift in Sources */,
+				B16FC9FE1E36C6E50057D49F /* Language.swift in Sources */,
 				B1D3AE7B1E316931005BB687 /* ListTableViewController.swift in Sources */,
 				B1C750961DF8B48B0057349A /* ViewController.swift in Sources */,
+				B16FC9FC1E36C6BA0057D49F /* Section.swift in Sources */,
 				B1C750941DF8B48B0057349A /* AppDelegate.swift in Sources */,
+				B1D3AE801E3290A7005BB687 /* DetailViewController.swift in Sources */,
+				B1D3AE841E36B75A005BB687 /* Categories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

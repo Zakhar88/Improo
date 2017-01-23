@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="-1839" y="630"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="YWT-sT-lCN">
             <objects>
-                <viewController id="tAS-WZ-tXe" sceneMemberID="viewController">
+                <viewController id="tAS-WZ-tXe" customClass="DetailViewController" customModule="Improo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7tj-bu-mHM"/>
                         <viewControllerLayoutGuide type="bottom" id="UxL-qW-cP7"/>
@@ -64,7 +64,19 @@
                     <view key="view" contentMode="scaleToFill" id="sDU-kE-x5w">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4V-mO-cQq">
+                                <rect key="frame" x="139" y="274" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d4V-mO-cQq" firstAttribute="centerX" secondItem="sDU-kE-x5w" secondAttribute="centerX" id="24c-5z-Qk2"/>
+                            <constraint firstItem="d4V-mO-cQq" firstAttribute="centerY" secondItem="sDU-kE-x5w" secondAttribute="centerY" id="XDw-mw-LV9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gkq-Mh-olx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -80,12 +92,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RCK-si-sT2">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" textLabel="MnC-3V-C7z" style="IBUITableViewCellStyleDefault" id="RCK-si-sT2">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RCK-si-sT2" id="KC3-E1-Fgq">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MnC-3V-C7z">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
