@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		70F490886D1D09DBA3AD38CA /* Pods_Improo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9277D986118DAF32CE9F51FE /* Pods_Improo.framework */; };
+		B10E8A881E3A7E17008C0119 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10E8A871E3A7E17008C0119 /* DetailViewController.storyboard */; };
 		B16FC9FC1E36C6BA0057D49F /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC9FB1E36C6BA0057D49F /* Section.swift */; };
 		B16FC9FE1E36C6E50057D49F /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC9FD1E36C6E50057D49F /* Language.swift */; };
 		B1C750941DF8B48B0057349A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C750931DF8B48B0057349A /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		0704BF6DD5226A89FFD0B612 /* Pods-Improo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Improo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Improo/Pods-Improo.debug.xcconfig"; sourceTree = "<group>"; };
 		733A51AAD972C716B3105CF9 /* Pods-Improo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Improo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Improo/Pods-Improo.release.xcconfig"; sourceTree = "<group>"; };
 		9277D986118DAF32CE9F51FE /* Pods_Improo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Improo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10E8A871E3A7E17008C0119 /* DetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DetailViewController.storyboard; path = Views/DetailViewController.storyboard; sourceTree = "<group>"; };
 		B16FC9FB1E36C6BA0057D49F /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		B16FC9FD1E36C6E50057D49F /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		B1C750901DF8B48B0057349A /* Improo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Improo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				B1C750971DF8B48B0057349A /* Main.storyboard */,
+				B10E8A871E3A7E17008C0119 /* DetailViewController.storyboard */,
 				B1C7509C1DF8B48B0057349A /* LaunchScreen.storyboard */,
 			);
 			name = Views;
@@ -197,6 +200,7 @@
 			files = (
 				B1C7509E1DF8B48B0057349A /* LaunchScreen.storyboard in Resources */,
 				B1C750A61DF8B4F50057349A /* GoogleService-Info.plist in Resources */,
+				B10E8A881E3A7E17008C0119 /* DetailViewController.storyboard in Resources */,
 				B1C7509B1DF8B48B0057349A /* Assets.xcassets in Resources */,
 				B1C750991DF8B48B0057349A /* Main.storyboard in Resources */,
 			);

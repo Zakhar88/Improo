@@ -9,27 +9,39 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBOutlet weak var image: UIImageView?
+    @IBOutlet weak var titleLabel: UILabel?
+    @IBOutlet weak var descriptionLabel: UILabel?
+    @IBOutlet weak var button: UIButton?
+    
+    var item: Item? {
+        didSet {
+            refreshUI()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func refreshUI() {
+        loadViewIfNeeded()
+        image?.image = item?.getImage()
+        titleLabel?.text = item?.title
+        descriptionLabel?.text = item?.description
     }
-    */
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        refreshUI()
+    }
 
+    @IBAction func buttonAction(_ button: UIButton) {
+        UIApplication.shared.open((item?.url)!, options: [:]) { (boolean) in
+            Swift.print(boolean)
+        }
+    }
+}
+
+extension DetailViewController: ItemSelectionDelegate {
+    func itemSelected(newItem: Item) {
+        item = newItem
+    }
 }

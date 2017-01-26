@@ -38,11 +38,24 @@ class Item {
             let imageRef = storageRef.child(imageName)
             imageRef.data(withMaxSize: 1 * 1024 * 1024) { data, error in
                 guard let data = data, let newImage = UIImage(data: data) else {
-                    //ALERT ABOUT IMAGE
+                    //Return fail image
                     return
                 }
                 self.image = newImage
             }
         }
+    }
+    
+    init() {
+        title = "Test Title"
+        description = "Test Description"
+        categories = ["TestCat1", "TestCat2"]
+        image = UIImage(named: "TestImage")
+        url = URL(string: "https://www.facebook.com")
+    }
+    
+    func getImage() -> UIImage {
+        return UIImage(named: "TestImage")!
+
     }
 }

@@ -8,21 +8,22 @@
 
 import UIKit
 
+protocol ItemSelectionDelegate: class {
+    func itemSelected(newItem: Item)
+}
+
 class ListTableViewController: UITableViewController {
+    
+    var items = [Item]()
+    weak var delegate: ItemSelectionDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        items.append(Item())
+        items.append(Item())
+        items.append(Item())
+        items.append(Item())
+        items.append(Item())
     }
 
     // MARK: - Table view data source
@@ -33,17 +34,22 @@ class ListTableViewController: UITableViewController {
 //    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 10
+        return items.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell", for: indexPath)
-        cell.textLabel?.text = "Cell №\(indexPath.row)"
+        cell.textLabel?.text = items[indexPath.row].title
         return cell
     }
- 
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.itemSelected(newItem: items[indexPath.row])
+        if let detailViewController = self.delegate as? DetailViewController {
+            splitViewController?.showDetailViewController(detailViewController, sender: nil)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
