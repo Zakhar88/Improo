@@ -14,7 +14,7 @@ class Item {
     let title: String
     let description: String
     let categories: [String]
-    var image: UIImage?
+    var imageURL: URL?
     var url: URL?
     
     init?(dataSnapshot: FIRDataSnapshot) {
@@ -32,17 +32,8 @@ class Item {
             url = newURL
         }
         
-        if let imageName = value["imageName"] as? String {
-            let storage = FIRStorage.storage()
-            let storageRef = storage.reference(forURL: "your_firebase_storage_bucket")
-            let imageRef = storageRef.child(imageName)
-            imageRef.data(withMaxSize: 1 * 1024 * 1024) { data, error in
-                guard let data = data, let newImage = UIImage(data: data) else {
-                    //Return fail image
-                    return
-                }
-                self.image = newImage
-            }
+        if let imageURLString = value["imageurl"] as? String, let imageNewURL = URL(string: imageURLString) {
+            imageURL = imageNewURL
         }
     }
     
@@ -50,7 +41,6 @@ class Item {
         title = "Test Title"
         description = "Test Description"
         categories = ["TestCat1", "TestCat2"]
-        image = UIImage(named: "TestImage")
         url = URL(string: "https://www.facebook.com")
     }
     
