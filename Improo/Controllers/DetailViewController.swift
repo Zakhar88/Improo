@@ -12,7 +12,7 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var image: UIImageView?
     @IBOutlet weak var titleLabel: UILabel?
-    @IBOutlet weak var descriptionLabel: UILabel?
+    @IBOutlet weak var descriptionTextView: UITextView?
     @IBOutlet weak var button: UIButton?
     
     var item: Item? {
@@ -23,9 +23,9 @@ class DetailViewController: UIViewController {
     
     func refreshUI() {
         loadViewIfNeeded()
-        image?.image = item?.getImage()
+        image?.isHidden = true//.image = item?.getImage()
         titleLabel?.text = item?.title
-        descriptionLabel?.text = item?.description
+        descriptionTextView?.text = item?.description
     }
     
     override func viewDidLoad() {
