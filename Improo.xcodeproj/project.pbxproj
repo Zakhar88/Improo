@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		70F490886D1D09DBA3AD38CA /* Pods_Improo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9277D986118DAF32CE9F51FE /* Pods_Improo.framework */; };
 		B10E8A881E3A7E17008C0119 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10E8A871E3A7E17008C0119 /* DetailViewController.storyboard */; };
+		B15C4DAE1E92E67B00B8C317 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C4DAD1E92E67B00B8C317 /* MenuTableViewController.swift */; };
+		B15C4DB01E92E9C900B8C317 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C4DAF1E92E9C900B8C317 /* SplitViewController.swift */; };
+		B16D14F21E92F347003D20D7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B16D14F11E92F347003D20D7 /* SWRevealViewController.m */; };
 		B16FC9FC1E36C6BA0057D49F /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC9FB1E36C6BA0057D49F /* Section.swift */; };
 		B16FC9FE1E36C6E50057D49F /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC9FD1E36C6E50057D49F /* Language.swift */; };
 		B1C750941DF8B48B0057349A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C750931DF8B48B0057349A /* AppDelegate.swift */; };
-		B1C750961DF8B48B0057349A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C750951DF8B48B0057349A /* ViewController.swift */; };
 		B1C750991DF8B48B0057349A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C750971DF8B48B0057349A /* Main.storyboard */; };
 		B1C7509B1DF8B48B0057349A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C7509A1DF8B48B0057349A /* Assets.xcassets */; };
 		B1C7509E1DF8B48B0057349A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C7509C1DF8B48B0057349A /* LaunchScreen.storyboard */; };
@@ -28,11 +30,15 @@
 		733A51AAD972C716B3105CF9 /* Pods-Improo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Improo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Improo/Pods-Improo.release.xcconfig"; sourceTree = "<group>"; };
 		9277D986118DAF32CE9F51FE /* Pods_Improo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Improo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10E8A871E3A7E17008C0119 /* DetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DetailViewController.storyboard; path = Views/DetailViewController.storyboard; sourceTree = "<group>"; };
+		B15C4DA91E92D56C00B8C317 /* Improo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Improo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B15C4DAD1E92E67B00B8C317 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = Controllers/MenuTableViewController.swift; sourceTree = "<group>"; };
+		B15C4DAF1E92E9C900B8C317 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplitViewController.swift; path = Controllers/SplitViewController.swift; sourceTree = "<group>"; };
+		B16D14F01E92F347003D20D7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		B16D14F11E92F347003D20D7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		B16FC9FB1E36C6BA0057D49F /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		B16FC9FD1E36C6E50057D49F /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		B1C750901DF8B48B0057349A /* Improo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Improo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C750931DF8B48B0057349A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1C750951DF8B48B0057349A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B1C750981DF8B48B0057349A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1C7509A1DF8B48B0057349A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1C7509D1DF8B48B0057349A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +62,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B15C4DA81E92D55B00B8C317 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B16D14F01E92F347003D20D7 /* SWRevealViewController.h */,
+				B16D14F11E92F347003D20D7 /* SWRevealViewController.m */,
+				B15C4DA91E92D56C00B8C317 /* Improo-Bridging-Header.h */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
 		B1C750871DF8B48A0057349A = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +128,8 @@
 		B1D3AE7E1E3169C0005BB687 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B1C750951DF8B48B0057349A /* ViewController.swift */,
+				B15C4DAF1E92E9C900B8C317 /* SplitViewController.swift */,
+				B15C4DAD1E92E67B00B8C317 /* MenuTableViewController.swift */,
 				B1D3AE7A1E316931005BB687 /* ListTableViewController.swift */,
 				B1D3AE7F1E3290A7005BB687 /* DetailViewController.swift */,
 			);
@@ -122,6 +139,7 @@
 		D4AE92B19BD0E139801DEEB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B15C4DA81E92D55B00B8C317 /* SWRevealViewController */,
 				9277D986118DAF32CE9F51FE /* Pods_Improo.framework */,
 			);
 			name = Frameworks;
@@ -171,6 +189,7 @@
 				TargetAttributes = {
 					B1C7508F1DF8B48A0057349A = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -263,10 +282,12 @@
 			files = (
 				B1D3AE821E36B6C4005BB687 /* Item.swift in Sources */,
 				B16FC9FE1E36C6E50057D49F /* Language.swift in Sources */,
+				B15C4DB01E92E9C900B8C317 /* SplitViewController.swift in Sources */,
+				B15C4DAE1E92E67B00B8C317 /* MenuTableViewController.swift in Sources */,
 				B1D3AE7B1E316931005BB687 /* ListTableViewController.swift in Sources */,
-				B1C750961DF8B48B0057349A /* ViewController.swift in Sources */,
 				B16FC9FC1E36C6BA0057D49F /* Section.swift in Sources */,
 				B1C750941DF8B48B0057349A /* AppDelegate.swift in Sources */,
+				B16D14F21E92F347003D20D7 /* SWRevealViewController.m in Sources */,
 				B1D3AE801E3290A7005BB687 /* DetailViewController.swift in Sources */,
 				B1D3AE841E36B75A005BB687 /* Categories.swift in Sources */,
 			);
@@ -390,11 +411,15 @@
 			baseConfigurationReference = 0704BF6DD5226A89FFD0B612 /* Pods-Improo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Improo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = G33.Improo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Improo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -403,11 +428,14 @@
 			baseConfigurationReference = 733A51AAD972C716B3105CF9 /* Pods-Improo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Improo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = G33.Improo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Improo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
