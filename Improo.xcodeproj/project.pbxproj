@@ -10,7 +10,6 @@
 		70F490886D1D09DBA3AD38CA /* Pods_Improo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9277D986118DAF32CE9F51FE /* Pods_Improo.framework */; };
 		B10E8A881E3A7E17008C0119 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10E8A871E3A7E17008C0119 /* DetailViewController.storyboard */; };
 		B15C4DAE1E92E67B00B8C317 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C4DAD1E92E67B00B8C317 /* MenuTableViewController.swift */; };
-		B15C4DB01E92E9C900B8C317 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C4DAF1E92E9C900B8C317 /* SplitViewController.swift */; };
 		B16D14F21E92F347003D20D7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B16D14F11E92F347003D20D7 /* SWRevealViewController.m */; };
 		B16FC9FC1E36C6BA0057D49F /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC9FB1E36C6BA0057D49F /* Section.swift */; };
 		B16FC9FE1E36C6E50057D49F /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC9FD1E36C6E50057D49F /* Language.swift */; };
@@ -32,7 +31,6 @@
 		B10E8A871E3A7E17008C0119 /* DetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DetailViewController.storyboard; path = Views/DetailViewController.storyboard; sourceTree = "<group>"; };
 		B15C4DA91E92D56C00B8C317 /* Improo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Improo-Bridging-Header.h"; sourceTree = "<group>"; };
 		B15C4DAD1E92E67B00B8C317 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = Controllers/MenuTableViewController.swift; sourceTree = "<group>"; };
-		B15C4DAF1E92E9C900B8C317 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplitViewController.swift; path = Controllers/SplitViewController.swift; sourceTree = "<group>"; };
 		B16D14F01E92F347003D20D7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		B16D14F11E92F347003D20D7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		B16FC9FB1E36C6BA0057D49F /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 		B1D3AE7E1E3169C0005BB687 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B15C4DAF1E92E9C900B8C317 /* SplitViewController.swift */,
 				B15C4DAD1E92E67B00B8C317 /* MenuTableViewController.swift */,
 				B1D3AE7A1E316931005BB687 /* ListTableViewController.swift */,
 				B1D3AE7F1E3290A7005BB687 /* DetailViewController.swift */,
@@ -282,7 +279,6 @@
 			files = (
 				B1D3AE821E36B6C4005BB687 /* Item.swift in Sources */,
 				B16FC9FE1E36C6E50057D49F /* Language.swift in Sources */,
-				B15C4DB01E92E9C900B8C317 /* SplitViewController.swift in Sources */,
 				B15C4DAE1E92E67B00B8C317 /* MenuTableViewController.swift in Sources */,
 				B1D3AE7B1E316931005BB687 /* ListTableViewController.swift in Sources */,
 				B16FC9FC1E36C6BA0057D49F /* Section.swift in Sources */,
