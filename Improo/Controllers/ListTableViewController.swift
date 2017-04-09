@@ -13,11 +13,7 @@ class ListTableViewController: UITableViewController {
     @IBOutlet weak var menuBarButtonIcon: UIBarButtonItem!
     
     var items = [Item]()
-    var section: Section = .Books {
-        didSet {
-            title = section.ukrainian
-        }
-    }
+    var section: Section = .Books
 
     override func viewDidLoad() {
         title = section.ukrainian

@@ -122,32 +122,8 @@
                         <sections>
                             <tableViewSection id="hRh-MM-Ciq">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="DVc-dU-wmA" userLabel="Books">
-                                        <rect key="frame" x="0.0" y="120" width="320" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DVc-dU-wmA" id="qFB-XZ-x98">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Книги" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkc-lD-hIt">
-                                                    <rect key="frame" x="28" y="19" width="48" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="kkc-lD-hIt" firstAttribute="centerY" secondItem="qFB-XZ-x98" secondAttribute="centerY" id="EHm-IC-kOv"/>
-                                                <constraint firstItem="kkc-lD-hIt" firstAttribute="leading" secondItem="qFB-XZ-x98" secondAttribute="leadingMargin" constant="20" id="XZP-t8-owi"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.98159015959999996" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="QQn-vd-zpU" kind="custom" identifier="Books" customClass="SWRevealViewControllerSeguePushController" id="owA-LB-KbQ"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="sJg-fl-y4f" userLabel="Activities">
-                                        <rect key="frame" x="0.0" y="180" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="120" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sJg-fl-y4f" id="hW8-L3-WuB">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
@@ -168,6 +144,30 @@
                                         <color key="backgroundColor" red="1" green="0.98159015959999996" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="QQn-vd-zpU" kind="custom" identifier="Activities" customClass="SWRevealViewControllerSeguePushController" id="49B-eP-n7b"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="DVc-dU-wmA" userLabel="Books">
+                                        <rect key="frame" x="0.0" y="180" width="320" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DVc-dU-wmA" id="qFB-XZ-x98">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Книги" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkc-lD-hIt">
+                                                    <rect key="frame" x="28" y="19" width="48" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kkc-lD-hIt" firstAttribute="centerY" secondItem="qFB-XZ-x98" secondAttribute="centerY" id="EHm-IC-kOv"/>
+                                                <constraint firstItem="kkc-lD-hIt" firstAttribute="leading" secondItem="qFB-XZ-x98" secondAttribute="leadingMargin" constant="20" id="XZP-t8-owi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.98159015959999996" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="QQn-vd-zpU" kind="custom" identifier="Books" customClass="SWRevealViewControllerSeguePushController" id="owA-LB-KbQ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="NZg-Wg-sSF" userLabel="Courses">
@@ -194,32 +194,8 @@
                                             <segue destination="QQn-vd-zpU" kind="custom" identifier="Courses" customClass="SWRevealViewControllerSeguePushController" id="Fyx-eC-6Mb"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="mjg-mp-zwT" userLabel="Sites">
-                                        <rect key="frame" x="0.0" y="300" width="320" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mjg-mp-zwT" id="GqF-u5-ELW">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сайти" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCF-It-PdF">
-                                                    <rect key="frame" x="28" y="19" width="50" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="WCF-It-PdF" firstAttribute="leading" secondItem="GqF-u5-ELW" secondAttribute="leadingMargin" constant="20" id="5sR-4W-yx7"/>
-                                                <constraint firstItem="WCF-It-PdF" firstAttribute="centerY" secondItem="GqF-u5-ELW" secondAttribute="centerY" id="HYm-ye-P8c"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.98159015959999996" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="QQn-vd-zpU" kind="custom" identifier="Resources" customClass="SWRevealViewControllerSeguePushController" id="ySt-6B-Piv"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KcM-EX-Y4V" userLabel="Food">
-                                        <rect key="frame" x="0.0" y="360" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="300" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KcM-EX-Y4V" id="GLa-b4-dUn">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
@@ -240,6 +216,30 @@
                                         <color key="backgroundColor" red="1" green="0.98159015959999996" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <segue destination="QQn-vd-zpU" kind="custom" identifier="Food" customClass="SWRevealViewControllerSeguePushController" id="8Fv-4o-lFe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="mjg-mp-zwT" userLabel="Resources">
+                                        <rect key="frame" x="0.0" y="360" width="320" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mjg-mp-zwT" id="GqF-u5-ELW">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сайти" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCF-It-PdF">
+                                                    <rect key="frame" x="28" y="19" width="50" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WCF-It-PdF" firstAttribute="leading" secondItem="GqF-u5-ELW" secondAttribute="leadingMargin" constant="20" id="5sR-4W-yx7"/>
+                                                <constraint firstItem="WCF-It-PdF" firstAttribute="centerY" secondItem="GqF-u5-ELW" secondAttribute="centerY" id="HYm-ye-P8c"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.98159015959999996" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="QQn-vd-zpU" kind="custom" identifier="Resources" customClass="SWRevealViewControllerSeguePushController" id="ySt-6B-Piv"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
