@@ -30,6 +30,8 @@ class ListTableViewController: UITableViewController {
             menuBarButtonIcon.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        
+        FirebaseManager.sharedManager.loadItems()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

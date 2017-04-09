@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		70F490886D1D09DBA3AD38CA /* Pods_Improo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9277D986118DAF32CE9F51FE /* Pods_Improo.framework */; };
+		B13B8ED51E9A843F0026341F /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13B8ED41E9A843F0026341F /* FirebaseManager.swift */; };
 		B15C4DAE1E92E67B00B8C317 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15C4DAD1E92E67B00B8C317 /* MenuTableViewController.swift */; };
 		B16D14F21E92F347003D20D7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B16D14F11E92F347003D20D7 /* SWRevealViewController.m */; };
 		B16FC9FC1E36C6BA0057D49F /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16FC9FB1E36C6BA0057D49F /* Section.swift */; };
@@ -27,6 +28,7 @@
 		0704BF6DD5226A89FFD0B612 /* Pods-Improo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Improo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Improo/Pods-Improo.debug.xcconfig"; sourceTree = "<group>"; };
 		733A51AAD972C716B3105CF9 /* Pods-Improo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Improo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Improo/Pods-Improo.release.xcconfig"; sourceTree = "<group>"; };
 		9277D986118DAF32CE9F51FE /* Pods_Improo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Improo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13B8ED41E9A843F0026341F /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		B15C4DA91E92D56C00B8C317 /* Improo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Improo-Bridging-Header.h"; sourceTree = "<group>"; };
 		B15C4DAD1E92E67B00B8C317 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableViewController.swift; path = Controllers/MenuTableViewController.swift; sourceTree = "<group>"; };
 		B16D14F01E92F347003D20D7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				B1D3AE7D1E316942005BB687 /* Views */,
 				B1D3AE7E1E3169C0005BB687 /* Controllers */,
 				B1C750931DF8B48B0057349A /* AppDelegate.swift */,
+				B13B8ED41E9A843F0026341F /* FirebaseManager.swift */,
 				B1C7509A1DF8B48B0057349A /* Assets.xcassets */,
 				B1C7509F1DF8B48B0057349A /* Info.plist */,
 				B1C750A51DF8B4F50057349A /* GoogleService-Info.plist */,
@@ -275,6 +278,7 @@
 			files = (
 				B1D3AE821E36B6C4005BB687 /* Item.swift in Sources */,
 				B16FC9FE1E36C6E50057D49F /* Language.swift in Sources */,
+				B13B8ED51E9A843F0026341F /* FirebaseManager.swift in Sources */,
 				B15C4DAE1E92E67B00B8C317 /* MenuTableViewController.swift in Sources */,
 				B1D3AE7B1E316931005BB687 /* ListTableViewController.swift in Sources */,
 				B16FC9FC1E36C6BA0057D49F /* Section.swift in Sources */,
