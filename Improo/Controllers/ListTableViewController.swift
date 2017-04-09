@@ -8,18 +8,20 @@
 
 import UIKit
 
-protocol ItemSelectionDelegate: class {
-    func itemSelected(newItem: Item)
-}
-
 class ListTableViewController: UITableViewController {
     
     @IBOutlet weak var menuBarButtonIcon: UIBarButtonItem!
     
     var items = [Item]()
-    weak var delegate: ItemSelectionDelegate?
+    var section: Section = .Books {
+        didSet {
+            title = section.ukrainian
+        }
+    }
 
     override func viewDidLoad() {
+        title = section.ukrainian
+        
         super.viewDidLoad()
         items.append(Item())
         items.append(Item())
@@ -38,7 +40,6 @@ class ListTableViewController: UITableViewController {
         return items.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell", for: indexPath)
         cell.textLabel?.text = items[indexPath.row].title
@@ -46,9 +47,12 @@ class ListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.itemSelected(newItem: items[indexPath.row])
-        if let detailViewController = self.delegate as? DetailViewController {
-            splitViewController?.showDetailViewController(detailViewController, sender: nil)
+        performSegue(withIdentifier: "showDetails", sender: items[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetails", let detailsVC = segue.destination as? DetailsViewController, let item = sender as? Item {
+            detailsVC.item = item
         }
     }
 }

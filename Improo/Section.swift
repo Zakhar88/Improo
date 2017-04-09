@@ -9,15 +9,29 @@
 import Foundation
 
 enum Section: String {
-    case Books = "Books"
-    case Events = "Events"
     case Activities = "Activities"
-    case Resources = "Resources"
-    case Food = "Food"
-    case Entertainment = "Entertainment"
-    case Sport = "Sport"
+    case Books = "Books"
     case Career = "Career"
+    case Courses = "Courses"
+    case Entertainment = "Entertainment"
+    case Events = "Events"
+    case Food = "Food"
     case News = "News"
+    case Resources = "Resources"
+    case Sport = "Sport"
     
-    static let allSections = [Books.rawValue, Events.rawValue, Activities.rawValue, Resources.rawValue, Food.rawValue, Entertainment.rawValue, Sport.rawValue, Career.rawValue, News.rawValue]
+    var ukrainian: String {
+        switch self {
+        case .Activities: return "Дії"
+        case .Books: return "Книги"
+        case .Career: return "Кар'єра"
+        case .Courses: return "Курси"
+        case .Entertainment: return "Розваги"
+        case .Events: return "Події"
+        case .Food: return "Їжа"
+        case .News: return "Новини"
+        case .Resources: return "Сайти"
+        case .Sport: return "Спорт"
+        }
+    }
 }

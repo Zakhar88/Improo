@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,11 +24,11 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RCK-si-sT2" id="KC3-E1-Fgq">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MnC-3V-C7z">
-                                            <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -35,9 +36,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="0uK-Fu-xdc" kind="show" id="0Gd-Ly-Ezx"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -50,6 +48,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuBarButtonIcon" destination="i8W-zK-rTh" id="CX4-5J-zWF"/>
+                        <segue destination="0uK-Fu-xdc" kind="show" identifier="showDetails" id="7tY-0l-RBp"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVw-dQ-NpJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -144,7 +143,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.98159015959999996" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="QQn-vd-zpU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="owA-LB-KbQ"/>
+                                            <segue destination="QQn-vd-zpU" kind="custom" identifier="Books" customClass="SWRevealViewControllerSeguePushController" id="owA-LB-KbQ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="sJg-fl-y4f" userLabel="Activities">
@@ -168,7 +167,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.98159015959999996" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="QQn-vd-zpU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="49B-eP-n7b"/>
+                                            <segue destination="QQn-vd-zpU" kind="custom" identifier="Activities" customClass="SWRevealViewControllerSeguePushController" id="49B-eP-n7b"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="NZg-Wg-sSF" userLabel="Courses">
@@ -192,7 +191,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.98159015959999996" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="QQn-vd-zpU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Fyx-eC-6Mb"/>
+                                            <segue destination="QQn-vd-zpU" kind="custom" identifier="Courses" customClass="SWRevealViewControllerSeguePushController" id="Fyx-eC-6Mb"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="mjg-mp-zwT" userLabel="Sites">
@@ -216,7 +215,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.98159015959999996" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="QQn-vd-zpU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="ySt-6B-Piv"/>
+                                            <segue destination="QQn-vd-zpU" kind="custom" identifier="Resources" customClass="SWRevealViewControllerSeguePushController" id="ySt-6B-Piv"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KcM-EX-Y4V" userLabel="Food">
@@ -240,7 +239,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.98159015959999996" blue="0.49019607840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="QQn-vd-zpU" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="8Fv-4o-lFe"/>
+                                            <segue destination="QQn-vd-zpU" kind="custom" identifier="Food" customClass="SWRevealViewControllerSeguePushController" id="8Fv-4o-lFe"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -256,10 +255,10 @@
             </objects>
             <point key="canvasLocation" x="-1723" y="618"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="mVT-ub-umk">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" id="0uK-Fu-xdc" customClass="DetailViewController" customModule="Improo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="0uK-Fu-xdc" customClass="DetailsViewController" customModule="Improo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K33-vq-mhg"/>
                         <viewControllerLayoutGuide type="bottom" id="FQ1-AA-PcN"/>
@@ -269,13 +268,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtX-On-4b1">
-                                <rect key="frame" x="16" y="50" width="288" height="24"/>
+                                <rect key="frame" x="16" y="86" width="288" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GoT-n2-jhW">
-                                <rect key="frame" x="16" y="104" width="288" height="454"/>
+                                <rect key="frame" x="16" y="140" width="288" height="418"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -284,7 +283,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="MtX-On-4b1" firstAttribute="top" secondItem="K33-vq-mhg" secondAttribute="bottom" constant="30" id="4lW-LC-sFa"/>
+                            <constraint firstItem="MtX-On-4b1" firstAttribute="topMargin" secondItem="K33-vq-mhg" secondAttribute="bottom" constant="30" id="4lW-LC-sFa"/>
                             <constraint firstItem="GoT-n2-jhW" firstAttribute="top" secondItem="MtX-On-4b1" secondAttribute="bottom" constant="30" id="CIP-pq-9Sr"/>
                             <constraint firstItem="MtX-On-4b1" firstAttribute="centerX" secondItem="ApK-ul-CnW" secondAttribute="centerX" id="Jhw-1i-3XD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GoT-n2-jhW" secondAttribute="trailing" id="Og9-sV-hLI"/>
@@ -305,6 +304,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ySt-6B-Piv"/>
+        <segue reference="49B-eP-n7b"/>
     </inferredMetricsTieBreakers>
 </document>

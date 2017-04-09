@@ -1,5 +1,5 @@
 //
-//  DetailViewController.swift
+//  DetailsViewController.swift
 //  Improo
 //
 //  Created by 3axap on 20.01.17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailsViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var descriptionTextView: UITextView?
@@ -28,11 +28,5 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         refreshUI()
-    }
-}
-
-extension DetailViewController: ItemSelectionDelegate {
-    func itemSelected(newItem: Item) {
-        item = newItem
     }
 }

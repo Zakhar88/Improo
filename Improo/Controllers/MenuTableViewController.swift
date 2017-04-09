@@ -9,4 +9,12 @@
 import UIKit
 
 class MenuTableViewController: UITableViewController {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let navController = segue.destination as? UINavigationController,
+            let listTableVC = navController.viewControllers.first as? ListTableViewController,
+            let section = Section(rawValue: segue.identifier ?? "") {
+            listTableVC.section = section
+        }
+    }
 }
